@@ -1,0 +1,161 @@
+div.bs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+div.bs-list .data-grid {
+  width: 100%;
+}
+
+div.bs-list .empty-list {
+  text-align: center;
+  width: 250px;
+}
+
+div.bs-list div.cell-agency {
+  display: inline-flex;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  vertical-align: middle;
+}
+
+div.bs-list div.cell-agency img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.bs-update-status {
+  width: 444px;
+  height: 70px;
+  overflow: hidden;
+}
+
+div.bs-list span.bp {
+  font-weight: 600;
+}
+
+div.bs-list div.booking-details {
+  display: table;
+  color: #333;
+  font-size: 15px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #d9d8d9;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+}
+
+div.bs-list div.booking-details div.booking-detail {
+  display: table-row;
+}
+
+div.bs-list div.booking-details div.booking-detail div.booking-detail-value {
+  display: table-row;
+  line-height: 25px;
+  font-size: 13px;
+  color: rgb(0 0 0 / 47%);
+}
+
+div.bs-list div.booking-details div.booking-detail span.booking-detail-title {
+  display: table-row;
+  font-weight: 700;
+  width: 250px;
+  font-size: 15px;
+  color: rgb(0 0 0 / 87%);
+}
+
+div.bs-list div.booking-details div.booking-detail div.booking-detail-value div.property-agency {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 30px;
+}
+
+div.bs-list div.booking-details div.booking-detail div.booking-detail-value div.property-agency img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.bs-list div.booking-details div.booking-detail div.booking-detail-value span.property-agency-name {
+  color: rgb(0 0 0 / 60%);
+  font-size: 0.9em;
+  line-height: 1em;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+
+div.bs-list div.booking-details div.booking-detail div.booking-price {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(0 0 0 / 87%);
+}
+
+div.bs-list div.extras {
+  margin-bottom: 10px;
+}
+
+div.bs-list div.extras span.extras-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+div.bs-list div.extras div.extra {
+  display: flex;
+  align-items: center;
+  margin: 3px;
+}
+
+div.bs-list div.extras div.extra .extra-icon {
+  color: #1f9201;
+  height: 20px;
+}
+
+div.bs-list div.extras div.extra span.extra-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+div.bs-list div.extras div.extra span.extra-text {
+  font-size: 12px;
+  color: rgb(0 0 0 / 47%);
+}
+
+div.bs-list div.bs-buttons {
+  display: grid;
+  margin-top: 10px;
+}
+
+div.bs-list div.bs-buttons a,
+div.bs-list div.bs-buttons button {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+@media only screen and (width <=960px) {
+  div.bs-list {
+    max-width: 480px;
+  }
+
+  div.bs-list .empty-list {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (width >=960px) {
+  div.bs-list {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+  }
+
+  div.bs-list .empty-list {
+    margin-top: 15px;
+  }
+}

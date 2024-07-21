@@ -1,0 +1,27 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+npm-debug.log*
+
+# TypeScript
+/dist
+*.tsbuildinfo
+
+# misc
+.DS_Store
+.DS_Store?
+.env
+.env.docker
+.env.dev
+.env.development
+.env.oraclecloud
+
+# eslint
+.eslintcache
+
+# jest
+/coverage
+
+# logs
+/logs

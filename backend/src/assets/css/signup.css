@@ -1,0 +1,56 @@
+/* Signup */
+div.signup {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  justify-content: center;
+  margin: 45px 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.signup-form-title {
+  text-align: center;
+  text-transform: capitalize;
+  color: #121212;
+}
+
+.signup .buttons {
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.signup .buttons button {
+  margin-right: 15px;
+  margin-left: 0 !important;
+}
+
+/* Device width is less than or equal to 960px */
+
+@media only screen and (width <=960px) {
+  .signup-form {
+    width: 350px;
+    height: 730px;
+    padding: 30px;
+  }
+
+  .recaptcha {
+    margin-top: 25px;
+    margin-left: -10px;
+  }
+}
+
+/* Device width is greater than or equal to 960px */
+
+@media only screen and (width >=960px) {
+  .signup-form {
+    width: 600px;
+    height: 610px;
+    padding: 30px;
+  }
+
+  .recaptcha {
+    margin-top: 25px;
+    margin-left: 85px;
+  }
+}

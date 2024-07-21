@@ -1,0 +1,67 @@
+/* Create Property */
+
+div.create-property {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-items: center;
+  transform: translate3d(0, 0, 0);
+  /* margin: 45px 0; */
+}
+
+.property-form-wrapper {
+  margin: 32px 0;
+}
+
+.property-form-title {
+  text-align: center;
+  text-transform: capitalize;
+  color: #121212;
+}
+
+.checkbox-fc {
+  margin: 13px 0 !important;
+}
+
+.checkbox-fc .checkbox-fcl {
+  color: rgb(0 0 0 / 60%);
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+.label {
+  color: rgb(0 0 0 / 60%);
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  width: fit-content;
+  margin: 0 0 12px 12px;
+}
+
+.editor-field {
+  z-index: 0;
+}
+
+.editor-field .editor {
+  border: 1px solid #F1F1F1;
+  height: 300px;
+  overflow: auto;
+}
+
+/* Device width is less than or equal to 960px */
+
+@media only screen and (width <=960px) {
+  .property-form {
+    width: 360px;
+    padding: 30px;
+  }
+}
+
+/* Device width is greater than or equal to 960px */
+
+@media only screen and (width >=960px) {
+  .property-form {
+    width: 600px;
+    padding: 30px;
+  }
+}

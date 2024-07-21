@@ -1,0 +1,45 @@
+div.status-filter {
+  background: #fafafa;
+  margin: 10px 10px 0 0;
+  border: 1px solid #dadada;
+  font-size: 13px;
+  text-align: center;
+}
+
+div.status-filter ul.status-list {
+  list-style-type: none;
+  font-size: 13px;
+  margin: 15px 0 0;
+  padding: 0;
+  display: inline-block;
+  width: 250px;
+}
+
+div.status-filter ul.status-list li {
+  width: 42%;
+  float: left;
+  margin-bottom: 12px;
+  margin-left: 4%;
+  margin-right: 4%;
+  clear: none;
+}
+
+div.status-filter ul.status-list li input[type='checkbox'].status-checkbox {
+  cursor: pointer;
+}
+
+div.status-filter ul.status-list li span.bs:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+div.status-filter div.filter-actions {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+div.status-filter div.filter-actions span.uncheckall {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #0064c8;
+}

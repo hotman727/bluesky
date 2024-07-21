@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    env_file: ./api/.env.docker
+    restart: always
+    ports:
+      - 4004:4004
+    depends_on:
+      - mongo
+    volumes:
+      - cdn:/var/www/cdn/movinin
+
+  mongo:
+    image: mongo:latest
+    command: mongod --quiet --logpath /dev/null
+    restart: always
+    environment:
+      # Provide your credentials here
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: PASSWORD
+    ports:
+      - 27017:27017
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    depends_on:
+      - api
+    ports:
+      - 3003:3003
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    depends_on:
+      - api
+    ports:
+      - 80:80
+    volumes:
+      - cdn:/var/www/cdn/movinin
+
+volumes:
+  cdn:
